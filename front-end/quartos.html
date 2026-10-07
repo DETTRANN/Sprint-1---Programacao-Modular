@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quartos | Sistema Hospitalar</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="masthead"><div class="wrap"><div><a class="brand" href="index.html">Sistema Hospitalar</a><p>Organização dos atendimentos</p></div><span class="phase">Sprint 1</span></div></header>
+<nav aria-label="Menu principal"><div class="wrap"><a href="index.html">Visão geral</a><a href="pacientes.html">Pacientes</a><a href="profissionais.html">Profissionais</a><a href="consultas.html">Consultas</a><a href="internacoes.html">Internações</a><a href="quartos.html" aria-current="page">Quartos</a><a href="disponibilidade.html">Disponibilidade</a><a href="historico.html">Histórico</a></div></nav>
+<main id="conteudo" class="wrap"><p class="eyebrow">Programação Modular</p><h1>Quartos</h1><p class="lead">Identificação dos quartos e acompanhamento da capacidade de acomodação.</p><p class="notice">Protótipo de telas. Os dados são ilustrativos; botões não executam operações e alterações nos campos não são salvas.</p><section class="panel"><h2>Dados do quarto</h2><form><div class="fields"><label class="field">Número de identificação<input type="text" value="" placeholder="Ex.: 203"></label><label class="field">Andar<input type="number" value="" placeholder="Ex.: 2"></label><label class="field">Capacidade máxima<input type="number" value="" placeholder="Ex.: 2"></label></div><div class="actions"><button type="button" disabled>Cadastrar quarto</button><button type="button" disabled>Atualizar quarto</button></div></form><p class="help">A capacidade deve ser positiva e nunca menor que a ocupação atual. A situação é obtida pela ocupação: disponível quando vazio, ocupado quando há pacientes.</p></section><section class="panel"><h2>Ocupação atual</h2><div class="table-wrap" tabindex="0" role="region" aria-label="Tabela de registros"><table><thead><tr><th scope="col">Quarto</th><th scope="col">Andar</th><th scope="col">Capacidade máxima</th><th scope="col">Pacientes internados</th><th scope="col">Vagas livres</th><th scope="col">Situação</th></tr></thead><tbody><tr><td>201</td><td>2</td><td>2</td><td>1</td><td>1</td><td><span class="badge busy">Ocupado</span></td></tr><tr><td>202</td><td>2</td><td>1</td><td>0</td><td>1</td><td><span class="badge ok">Disponível</span></td></tr></tbody></table></div><p class="help">Um quarto ocupado ainda pode receber pacientes se houver vagas. Apenas internações sem alta efetiva entram na contagem de ocupação.</p></section></main>
+<footer><div class="wrap"><span>Integrante: Daniel Heber de Souza Godinho</span><span>Sistema Hospitalar · Sprint 1</span></div></footer>
+</body>
+</html>
